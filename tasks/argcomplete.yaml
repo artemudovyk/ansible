@@ -1,0 +1,11 @@
+- name: Install Argcomplete for autocompletion
+  become: true
+  pip:
+    name: argcomplete
+  tags:
+    - argcomplete
+
+- name: Activate Argcomplete globally
+  shell: activate-global-python-argcomplete
+  tags:
+    - argcomplete

@@ -1,0 +1,5 @@
+- hosts: localhost
+  tasks:
+    - include: tasks/vscode.yaml
+    - include: tasks/python.yaml
+    - include: tasks/argcomplete.yaml
