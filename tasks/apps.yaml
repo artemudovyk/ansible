@@ -75,3 +75,19 @@
   shell: flatpak install flathub tv.plex.PlexDesktop -y
   tags:
     - plex-client
+
+- name: Install Postman
+  shell: flatpak install flathub com.getpostman.Postman -y
+  tags:
+    - postman
+
+- name: Install ProtonUp-Qt
+  shell: flatpak install flathub net.davidotek.pupgui2 -y
+  tags:
+    - proton
+
+- name: Install qBitTorrent
+  shell: flatpak install flathub org.qbittorrent.qBittorrent -y
+  tags:
+    - qbittorrent
+
