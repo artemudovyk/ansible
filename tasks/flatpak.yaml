@@ -1,0 +1,15 @@
+- name: Install Flatpak
+  become: true
+  apt:
+    name: flatpak
+    update_cache: true
+
+- name: Install Software Flatpak plugin
+  become: true
+  apt:
+    name: gnome-software-plugin-flatpak
+    update_cache: true
+
+- name: Add Flathub repository
+  become: true
+  shell: flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo

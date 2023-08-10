@@ -1,0 +1,77 @@
+- name: Install Obsidian
+  shell: flatpak install flathub md.obsidian.Obsidian -y
+  tags:
+    - obsidian
+
+- name: Install Syncthing
+  shell: flatpak install flathub me.kozec.syncthingtk -y
+  tags:
+    - syncthing
+
+- name: Install BitWarden
+  shell: flatpak install flathub com.bitwarden.desktop -y
+  tags:
+    - bitwarden
+
+- name: Install Flatseal
+  shell: flatpak install flathub com.github.tchx84.Flatseal -y
+  tags:
+    - flatseal
+
+- name: Install Anki
+  shell: flatpak install flathub net.ankiweb.Anki -y
+  tags:
+    - anki
+
+- name: Install Blanket
+  shell: flatpak install flathub com.rafaelmardojai.Blanket -y
+  tags:
+    - blanket
+
+- name: Install Bottles
+  shell: flatpak install flathub com.usebottles.bottles -y
+  tags:
+    - bottles
+
+- name: Install Dconf Editor
+  shell: flatpak install flathub ca.desrt.dconf-editor -y
+  tags:
+    - dconf-editor
+
+- name: Install Discord
+  shell: flatpak install flathub com.discordapp.Discord -y
+  tags:
+    - discord
+
+- name: Install Flameshot
+  shell: flatpak install flathub org.flameshot.Flameshot -y
+  tags:
+    - flameshot
+
+- name: Install Google Chrome
+  shell: flatpak install flathub com.google.Chrome -y
+  tags:
+    - chrome
+
+- name: Install Kdenlive
+  shell: flatpak install flathub org.kde.kdenlive -y
+  tags:
+    - kdenlive
+
+- name: Install Input Remapper
+  become: true
+  apt:
+    name: input-remapper-gtk
+    update_cache: true
+  tags:
+    - input-remapper
+
+- name: Install OBS Studio
+  shell: flatpak install flathub com.obsproject.Studio -y
+  tags:
+    - obs-studio
+
+- name: Install Plex Client
+  shell: flatpak install flathub tv.plex.PlexDesktop -y
+  tags:
+    - plex-client

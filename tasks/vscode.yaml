@@ -5,25 +5,17 @@
       - apt-transport-https
       - wget
     update_cache: true
-  tags:
-    - vscode
 
 - name: Install GPG key
   become: true
   shell: wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
-  tags:
-    - vscode
 
 - name: Add repository
   become: true
   shell: add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-  tags:
-    - vscode
 
 - name: Install VSCode
   become: true
   apt:
     name: code
     update_cache: true
-  tags:
-    - vscode

@@ -3,7 +3,6 @@
   shell: curl https://pyenv.run | bash
   tags:
     - pyenv
-    - python
 
 - name: Add pyenv to PATH
   become_user: artud
@@ -17,4 +16,3 @@
     insertbefore: EOF
   tags:
     - pyenv
-    - python
